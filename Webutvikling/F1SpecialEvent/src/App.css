@@ -1,0 +1,87 @@
+/* Global Styles */
+.img-fluid {
+  width: 100%;
+  height: auto; /* Beholder bildets aspektforhold */
+  display: block; /* Fjerner eventuell ekstra plass under bildet */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2px;
+}
+
+/* Card Styles */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03); /*  hoveres på driver-card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Container & Overlay Text Styles */
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Sentrerer teksten over bildet */
+  color: white;
+  z-index: 10; /* Sikrer at teksten vises over bildet */
+}
+
+/* Specific Image Styles */
+.homepage-image {
+  margin: 20px auto; /* Sentrerer bildet horisontalt med margin på toppen og bunnen */
+  border: 5px solid snow;
+  box-shadow: 0px 0px 40px #888888; /* Skyggeeffekt for å løfte bildet litt fra bakgrunnen */
+}
+/* Add driver */
+.driver-img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.add-driver-section {
+  padding: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.add-driver-title {
+  color: #dc3545;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-driver-input,
+.add-driver-button {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.add-driver-input {
+  border: 1px solid #ccc;
+}
+
+.add-driver-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-driver-button:hover {
+  background-color: #bb2d3b;
+}

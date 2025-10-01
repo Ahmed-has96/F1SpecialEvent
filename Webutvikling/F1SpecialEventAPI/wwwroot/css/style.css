@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.api-container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f1-logo {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100px;
+  height: auto;
+}
+
+.info-table {
+  width: 90%; /* Øker tabellens bredde */
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.info-table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 25px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+  text-align: center;
+}
+
+.api-endpoint {
+  margin: 20px;
+  margin-top: 40px;
+}
+
+code {
+  background-color: #eee;
+  padding: 2px 4px;
+  border-radius: 4px;
+}

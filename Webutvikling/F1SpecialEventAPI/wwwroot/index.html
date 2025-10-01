@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/wwwroot/css/style.css" />
+    <title>API Documentation</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="Images/f1logoo.png" alt="F1 Logo" style="height: 30px" />
+        </a>
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active" href="index.html"> Docs</a>
+          <a class="nav-item nav-link" href="support.html">Support</a>
+          <a class="nav-item nav-link active" href="About.html">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="api-container">
+      <h1>API Documentation</h1>
+
+      <h2>Driver Model</h2>
+      <!-- Informasjonstabell for Driver Model -->
+      <table class="info-table">
+        <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+        <!-- Table rows for driver -->
+        <tr>
+          <td>Id</td>
+          <td>int</td>
+          <td>The id of the driver</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>string</td>
+          <td>Name of the driver</td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td>int</td>
+          <td>Age of the driver</td>
+        </tr>
+        <tr>
+          <td>Nationality</td>
+          <td>string</td>
+          <td>Nationality of the driver</td>
+        </tr>
+        <tr>
+          <td>Image</td>
+          <td>string</td>
+          <td>URL to the driver's image</td>
+        </tr>
+      </table>
+
+      <!-- API Endpoints  -->
+      <div class="container">
+        <div class="row">
+          <!-- API Endpoint: Get All Drivers -->
+          <div class="col-12 col-md-6 api-endpoint">
+            <h3>Get All Drivers</h3>
+            <p>Endpoint: <code>http://localhost:5266/api/Drivers</code></p>
+            <img src="Images/Getall.png" alt="get-all" />
+            <p>Returns all drivers in the database.</p>
+          </div>
+
+          <!-- API Endpoint: Get Driver by ID -->
+          <div class="col-md-4 api-endpoint">
+            <h3>Get Driver by ID</h3>
+            <p>Endpoint: <code>http://localhost:5266/api/Drivers/2</code></p>
+            <img src="Images/GetByid.png" alt="get-byID" />
+            <p>Returns a single driver by their ID.</p>
+          </div>
+
+          <!-- API Endpoint: Get Driver by Name -->
+          <div class="col-md-4 api-endpoint">
+            <h3>Get Driver by Name</h3>
+            <p>
+              Endpoint:<code
+                >http://localhost:5266/api/Drivers/title/Lewis%20Hamilton</code
+              >
+            </p>
+            <img src="Images/Getbyname.png" alt="get-byName" />
+            <p>Returns a driver by their name.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
