@@ -1,0 +1,9 @@
+# Lokale avhengigheter og bygg
+node_modules/
+dist/
+[Bb]in/
+[Oo]bj/
+.tools/
+
+# Databasen lages lokalt fra EF-migrasjonene
+/Webutvikling/F1SpecialEventAPI/Database/*.db*
