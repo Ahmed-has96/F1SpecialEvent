@@ -1,6 +1,6 @@
 # F1 Special Event
 
-En webapp for å registrere, søke etter og redigere Formel 1-førere. Appen har også en quiz. React-klienten snakker med et REST-API i C# (ASP.NET Core), som lagrer førerne i SQLite med Entity Framework Core.
+Jeg bygde F1 Special Event på egen hånd. I appen kan du registrere, søke etter og redigere Formel 1-førere eller prøve en quiz. Jeg skrev brukergrensesnittet i React og REST-API-et i C# med ASP.NET Core. API-et bruker Entity Framework Core til å lese og lagre førere i SQLite.
 
 **[Les C#-koden i DriversController](Webutvikling/F1SpecialEventAPI/Controllers/DriversController.cs)** · [Åpne React-klienten](Webutvikling/F1SpecialEvent/src)
 
